@@ -12,6 +12,7 @@ export class AppComponent {
     start = false;
     title = 'Checkers';
     gameEnded: boolean;
+    timeRunning: boolean;
 
 
     @ViewChild(TimerComponent)
@@ -22,11 +23,24 @@ export class AppComponent {
             this.gameEnded = this._time.gameEnded();
             }
         );
+
+        Observable.interval(1).subscribe(x => {
+            this.timeRunning = this._time.timeRunning();
+            }
+        );
     }
 
     myfunction() {
         if (this.gameEnded === true) {
             return false;
+        }
+    }
+
+    myfunction2() {
+        if (this.timeRunning === false) {
+            return false;
+        } else {
+            return true;
         }
     }
 

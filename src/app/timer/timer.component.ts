@@ -102,4 +102,8 @@ export class TimerComponent {
     gameEnded() {
         return this.mustStop;
     }
+
+    timeRunning() {
+        return this.timeStarted;
+    }
 }

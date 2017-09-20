@@ -18,6 +18,7 @@ export class GameComponent implements OnInit {
 
     // variable that is true when the game is in progress or paused, false when game not started or ended
     @Input() isGameOn = false;
+    @Input() isGameRunning = false;
 
     constructor () {
         this.score = 0;
@@ -33,6 +34,7 @@ export class GameComponent implements OnInit {
     startGame() {
         this.score = 0;
         this.isGameOn = true;
+        this.isGameRunning = true;
     }
 
     // generate random Number
