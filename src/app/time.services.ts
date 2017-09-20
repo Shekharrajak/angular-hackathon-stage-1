@@ -5,6 +5,7 @@ import { Subject} from 'rxjs/Subject';
 
 export class TimerService {
 
+    // commented part was for intracting child to child component.
     // private caseNumber = new Subject<boolean>();
     // caseNumber$ = this.caseNumber.asObservable();
 
