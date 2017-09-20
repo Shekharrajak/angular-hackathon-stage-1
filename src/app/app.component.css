@@ -1,0 +1,39 @@
+ul{
+  margin: 0;
+
+  display: inline-flex;
+  list-style-type: none;
+  align-items: center;
+  
+  width: 100%;
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+  
+.navbar {
+	background-color: green;
+	
+	display: inline-flex;
+
+	font-family: 'Bitter', serif;
+
+	position: fixed;
+	margin: 0;
+	padding: 0;
+
+	box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.4);
+
+  text-align: center;
+  min-height: 100px;
+  height: 100px;
+  width: 100%;
+
+	z-index: 999;
+}
+
+.content {
+  margin-top: 100px;
+}

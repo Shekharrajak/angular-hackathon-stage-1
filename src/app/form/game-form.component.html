@@ -1,0 +1,62 @@
+<!-- <form class ="container"
+        [formGroup]="form"
+                (ngSubmit)="onSubmit(form.value)">
+<input type="text" name="projectId" placeholder="projectId" formControlName="projectId" required="required">
+
+<br> -->
+
+<!-- <input type="text" name="score" placeholder="score" formControlName="score" > -->
+
+<div class="container content">
+	<!-- <div [hidden]="submitted"> -->
+		<form (ngSubmit)="onSubmit()" #heroForm>
+			<div class="rows">
+				<div class="form-group">
+					<label  for="name">
+						Name:
+					</label>
+					<input type="text" class="form-control" placeholder="name" formControlName="name" required name="name">
+				</div>
+			</div>
+			
+			<div class="rows">
+				<div class="form-group">
+					<label for="email-id">
+						Email:
+					</label>
+					<input type="text" class="form-control" required name="email" placeholder="email" formControlName="emailId">
+				</div>
+			</div>
+			
+			<div class="rows">
+				<div class="form-group">
+					<label for="priority-id">
+						Location:
+					</label>
+					<select class="form-control" id="priority-id" required name="location" formControlName="location">
+						<option value="Delhi">Delhi</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Kolkata">Kolkata</option>
+						<option value="Bangalore">Bangalore</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="rows">
+				<div class="form-group">
+					<label for="gitUrl">
+						Git Link:
+					</label>
+					<input type="text" class="form-control" required name="gitUrl" placeholder="gitUrl" name="gitUrl" formControlName="gitUrl">
+				</div>
+			</div>
+
+			<div class="rows">
+				<button type="submit" class="btn btn-success" >Submit</button>
+				<button type="reset" class="btn btn-default" >Reset</button>
+			</div>
+		</form>
+	<!-- </div> -->
+</div>
+	
