@@ -19,7 +19,7 @@ export class PostService {
       .toPromise()
        .then(
          res => {
-           res.json(); console.log(res.json() )
+           res.json(); console.log(res.json() );
          }
         )
        .catch(this.handleErrorPromise);
@@ -27,7 +27,7 @@ export class PostService {
 
     private handleErrorPromise (error: Response | any) {
       console.error(error.message || error);
-      console.log("error found");
+      console.log('error found');
 
       return Promise.reject(error.message || error);
     }

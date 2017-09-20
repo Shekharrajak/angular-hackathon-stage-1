@@ -3,12 +3,10 @@
         <div class="navbar">
             <ul class="col-12">
                 <li class="h1 col-3">{{title}}</li>
-                <!-- <li class="col-5"></li> -->
                 <li class="col-2"><button type="button" class="btn btn-success btn-large" (click)="time.start(); onClick(); game.startGame();" [hidden]="start"><a routerLink="/main"></a>Start Game</button></li>
                 <li class="col-2"><button type="button" class="btn btn-success btn-large" (click)="time.toggle(); onClick();" [hidden]="!game.isGameOn">pause/play</button></li>
                 <li class="col-2"><button type="button" class="btn btn-success btn-large" (click)="time.reset(); time.start(); onClick(); game.startGame();" [hidden]="!(!game.isGameOn && start)">Play Again</button></li>
                 <li class="col-2"><button type="button" class="btn btn-success btn-large" (click)="onSubmit()" [hidden]="!(!game.isGameOn && start)"><a routerLink="/submit">Share</a></button></li>
-                <!-- <li class="col-2" ><button type="button" class="btn btn-success btn-small" (click)="time.reset()">Reset</button> (start && !time.timeStarted) || (!start && time.timeStarted)</li> -->
                 <li class="col-2"></li>
             </ul>
         </div>

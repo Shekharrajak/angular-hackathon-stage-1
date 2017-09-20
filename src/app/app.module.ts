@@ -6,6 +6,9 @@ import { GameComponent } from './game/game.component';
 import { TimerComponent } from './timer/timer.component';
 import { GameFormComponent } from './form/game-form.component';
 import { TimerService } from './time.services';
+import { PostService } from './post.service';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
     declarations: [
@@ -16,6 +19,8 @@ import { TimerService } from './time.services';
     ],
     imports: [
         BrowserModule,
+        ReactiveFormsModule,
+        HttpModule,
         RouterModule.forRoot([
             {
                 path: 'main',
@@ -32,7 +37,7 @@ import { TimerService } from './time.services';
             }
         ])
     ],
-    providers: [TimerService],
+    providers: [TimerService, PostService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
